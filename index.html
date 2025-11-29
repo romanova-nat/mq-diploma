@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <wrp class="wrapper">
+  <div class="wrapper">
     <header class="header">
       <div class="header-container">
         <div class="top-header">
@@ -19,6 +19,13 @@
             </a>
           </div>
           <nav class="menu">
+            <div class="menu__button">
+              <div class="menu__button-label"></div>
+              <div class="menu__button-label"></div>
+              <div class="menu__button-label"></div>
+
+            </div>
+
             <ul class="menu-list">
               <li class="menu-list-item"><a href="#" class="menu-list-item-link">Главная</a></li>
               <li class="menu-list-item"><a href="#" class="menu-list-item-link">Посты</a></li>
@@ -376,14 +383,14 @@
 
             <div class="catalog-card">
               <div class="catalog-card-preview">
-                <img class="post-card-img" src="images /shop-item-desk1.jpg" alt>
+                <img class="catalog-card-img" src="images /shop-item-desk1.jpg" alt>
               </div>
               <div class="catalog-card-content">
                 <h2 class="catalog-post">Подушки на диван</h2>
                 <p class="catalod-post-text">Набор из двух подушек с модными принтами. Видео о создании <a href="#"
                     class="catalog-link">здесь</a>.</p>
 
-                <footer="catalog-footer">
+                <footer class="catalog-footer">
                   <div class="footer-content">
                     <ul class="price">
                       <li class="last-price">1000</li>
@@ -395,13 +402,13 @@
                       </button>
                     </div>
                   </div>
-                  </footer>
+                </footer>
               </div>
             </div>
 
             <div class="catalog-card">
               <div class="catalog-card-preview">
-                <img class="post-card-img" src="images /shop-item-desk2.jpg" alt>
+                <img class="catalog-card-img" src="images /shop-item-desk2.jpg" alt>
               </div>
               <div class="catalog-card-content">
                 <h2 class="catalog-post">Кукла «Зайчик»</h2>
@@ -424,7 +431,7 @@
 
             <div class="catalog-card">
               <div class="catalog-card-preview">
-                <img class="post-card-img" src="images /shop-item-desk3.jpg" alt>
+                <img class="catalog-card-img" src="images /shop-item-desk3.jpg" alt>
               </div>
               <div class="catalog-card-content">
                 <h2 class="catalog-post">Шестиугольная рамка</h2>
@@ -450,54 +457,56 @@
           </div>
 
         </section>
+      </div>
+      <address class="adress">
+        <ul class="icon">
+          <li class="icon-items"><a href="#" class="icon-item dribble" title="dribble"><span
+                class="visually-hidden">dribble</span></a></li>
+          <li class="icon-items"><a href="#" class="icon-item pinterest" title="pinterest"><span
+                class="visually-hidden">pintere</span></a></li>
+          <li class="icon-items"><a href="#" class="icon-item tumblr" title="tumblr"><span
+                class="visually-hidden">tumblr</span></a></li>
+        </ul>
+      </address>
 
-        <address class="adress">
-          <ul class="icon">
-            <li class="icon-items"><a href="#" class="icon-item dribble" title="dribble"><span
-                  class="visually-hidden">dribble</span></a></li>
-            <li class="icon-items"><a href="#" class="icon-item pinterest" title="pinterest"><span
-                  class="visually-hidden">pintere</span></a></li>
-            <li class="icon-items"><a href="#" class="icon-item tumblr" title="tumblr"><span
-                  class="visually-hidden">tumblr</span></a></li>
-          </ul>
-        </address>
+      <footer class="footer">
+        <p>Copyright © 2009–2019 City Blog LLC.</p>
+      </footer>
 
-        <footer class="footer">
-          <p>Copyright © 2009–2019 City Blog LLC.</p>
-        </footer>
+      <label for="popup-action-1" class="popup-action">открыть pop-up</label>
+      <input type="checkbox" class="popup-hidden" id="popup-action-1">
+      <div class="popup">
+        <form class="popup-form">
+          <h3 class="popup-title">ваш фидбек</h3>
 
-
-        <div class="popup">
-          <form class="popup-form">
-            <h3 class="popup-title">ваш фидбек</h3>
-
-            <div class="form-group">
-              <label class="field-group">
-                <span class="field-label">Как часто вы заходите на сайт?</span>
-                <select name="select-option" class="select">
-                  <option value="1" selected>Почти каждый день</option>
-                  <option value="2">Раз в несколько дней</option>
-                  <option value="3">Раз в несколько недель</option>
-                  <option value="4">Несколько раз в год</option>
-                </select>
-              </label>
-            </div>
-
+          <div class="form-group">
+            <label class="field-group">
+              <span class="field-label">Как часто вы заходите на сайт?</span>
+              <select name="select-option" class="select">
+                <option value="1" selected>Почти каждый день</option>
+                <option value="2">Раз в несколько дней</option>
+                <option value="3">Раз в несколько недель</option>
+                <option value="4">Несколько раз в год</option>
+              </select>
+            </label>
             <div class="form-group-radio">
-              <label class="radio-group">
-                <div>
-                  <span class="radio-group-text">Вы подписаны на e-mail рассылку?</span>
-                  <div>
-                    <input type="radio" class="radio" name="radio-group" required>
-                    <span class="radio-text">да</span>
-              </label>
+              <div class="radio-group-1">
+                <span class="radio-group-text">Вы подписаны на e-mail рассылку?</span>
+              </div>
               <label class="radio-group">
                 <input type="radio" class="radio" name="radio-group" required>
+                <span class="radio-text">да</span>
+              </label>
+              <label class="radio-group">
+
+                <input type="radio" class="radio" name="radio-group" required>
                 <span class="radio-text">нет</span>
+
               </label>
             </div>
 
             <div class="form-group">
+
               <label class="field-group">
                 <span class="field-label">Расскажите, какой контент вы хотели бы видеть
                   на нашем сайте?</span>
@@ -511,16 +520,10 @@
 
             <div class="close">
               <img src="svg/form-x.svg">
-
-
             </div>
-
-          </form>
-        </div>
-
+        </form>
       </div>
     </div>
-  </wrp>
 </body>
 
 </html>
