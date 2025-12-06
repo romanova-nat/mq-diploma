@@ -42,7 +42,8 @@ ul {
   max-width: 100%;
   margin: 0 auto;
 
-  background-image: url(../images\ /banner-bg.jpg);
+  /* background-image: url(../images\ /banner-bg.jpg); */
+  background-image: url(../images/banner-bg.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
