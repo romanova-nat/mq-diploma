@@ -42,7 +42,6 @@ ul {
   max-width: 100%;
   margin: 0 auto;
 
-  /* background-image: url(../images\ /banner-bg.jpg); */
   background-image: url(../images/banner-bg.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -227,7 +226,7 @@ ul {
 }
 
 .first {
-  background-image: url(../images\ /trend1.jpg);
+  background-image: url(../images/trend1.jpg);
   background-repeat: no-repeat;
 
   background-size: cover;
@@ -239,21 +238,21 @@ ul {
 
 .second {
   background-color: #eff6f1;
-  background-image: url(../images\ /trend2.jpg);
+  background-image: url(../images/trend2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .third {
   background-color: #eff6f1;
-  background-image: url(../images\ /trend3.jpg);
+  background-image: url(../images/trend3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .fourth {
   background-color: #eff6f1;
-  background-image: url(../images\ /trend4.jpg);
+  background-image: url(../images/trend4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -563,7 +562,7 @@ ul {
   border: none;
   width: 47px;
   height: 47px;
-  background-image: url(/svg/search.svg);
+  background-image: url(../svg/search.svg);
   background-repeat: no-repeat;
   background-color: #b59f5b;
   background-size: 18px;
@@ -948,17 +947,17 @@ ul {
 }
 
 .dribble {
-  background-image: url(/svg/001-dribbble.svg);
+  background-image: url(../svg/001-dribbble.svg);
   background-repeat: no-repeat;
 }
 
 .pinterest {
-  background-image: url(/svg/001-pinterest.svg);
+  background-image: url(../svg/001-pinterest.svg);
   background-repeat: no-repeat;
 }
 
 .tumblr {
-  background-image: url(/svg/003-tumblr.svg);
+  background-image: url(../svg/003-tumblr.svg);
   background-repeat: no-repeat;
   margin-right: 0px;
 }
@@ -1063,7 +1062,7 @@ ul {
   display: inline-block;
   width: 15px;
   height: 15px;
-  background-image: url(/svg/form-empty-circle.svg);
+  background-image: url(../svg/form-empty-circle.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 15px;
@@ -1073,7 +1072,7 @@ ul {
 }
 
 .radio:checked+.radio-text::before {
-  background-image: url(/svg/form-circle.svg);
+  background-image: url(../svg/form-circle.svg);
   background-repeat: no-repeat;
   background-size: 15px;
 }
@@ -1110,7 +1109,7 @@ ul {
   font-size: 13px;
   color: rgba(0, 0, 0, 5.4);
 
-  background-image: url(/svg/form-arrows.svg);
+  background-image: url(../svg/form-arrows.svg);
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: right 15px center;
