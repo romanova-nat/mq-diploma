@@ -222,6 +222,7 @@ ul {
 }
 
 .trend-card {
+  width: 100%;
   display: flex;
   flex-direction: column;
   border: rgba(181, 159, 91, 0.4) solid 3px;
@@ -530,21 +531,21 @@ ul {
 .search {
   display: flex;
   flex-wrap: nowrap;
+  position: relative;
+}
+
+.search-group {
+  width: 100%;
 }
 
 .search-form {
   box-sizing: border-box;
-  width: 223px;
-
+  width: 100%;
   height: 47px;
   border: none;
-  display: inline-block;
   vertical-align: middle;
-
   padding-left: 19px;
-
   background-color: #f4f7f6;
-
   font-family: OpenSans, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -567,6 +568,9 @@ ul {
   background-color: #b59f5b;
   background-size: 18px;
   background-position: center;
+
+  position: absolute;
+  right: 0;
 }
 
 .button-search:hover {
@@ -1500,7 +1504,7 @@ ul {
   /* Сейчас в тренде  */
 
   .t-card {
-    min-width: 49.5%;
+    min-width: 49%;
     box-sizing: border-box;
     padding-right: 18px;
     padding-left: 18px;
@@ -1512,6 +1516,11 @@ ul {
     max-width: 100%;
     flex-wrap: wrap;
     margin-bottom: 49px;
+  }
+
+  .trend-category {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .trend-posts-title {
@@ -1548,17 +1557,15 @@ ul {
   .page-content {
     padding-left: 3%;
     padding-right: 3%;
-  }
-
-
-  .article {
-    max-width: 100%;
-    margin: 0 5% 0 5%;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
   }
 
   .content {
+    width: 100%;
+    /* margin: 0 5% 0 5%; */
+    justify-content: center;
+    align-items: center;
+
     flex-direction: column;
   }
 
@@ -1567,7 +1574,6 @@ ul {
     flex-direction: column;
     width: 100%;
   }
-
 
   .post-card::after {
     content: "";
@@ -1603,7 +1609,8 @@ ul {
   }
 
   .additional {
-    max-width: 268px;
+    max-width: 100%;
+    margin-right: 9.8%;
   }
 
   /* Каталог */
