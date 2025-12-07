@@ -1194,7 +1194,9 @@ ul {
   position: absolute;
   right: 0px;
   top: -26px;
-  z-index: 2;
+  z-index: 1;
+
+  fill: #ffffff;
 }
 
 /* Кнопка для открытия формы */
