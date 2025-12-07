@@ -1931,8 +1931,8 @@ ul {
   /* Popup */
 
   .popup-form {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 56px 5% auto 5%;
+    padding: 30px 24px;
   }
 
 }
