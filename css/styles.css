@@ -39,8 +39,9 @@ ul {
 .header {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
   margin: 0 auto;
+  max-width: 100%;
+  height: 425px;
 
   background-image: url(../images/banner-bg.jpg);
   background-repeat: no-repeat;
@@ -51,7 +52,7 @@ ul {
   z-index: 0;
 
   padding-top: 27px;
-  padding-bottom: 146px;
+  /* padding-bottom: 146px; */
 }
 
 .header::before {
@@ -132,14 +133,15 @@ ul {
 .title-container {
   display: flex;
   margin: auto;
-  margin-top: 194px;
+  margin-top: 6%;
+  /* margin-top: 194px; */
   max-width: 687px;
 }
 
 /* Основной контент страницы */
 
 .page {
-  margin: 63px auto 0 auto;
+  margin: 58px auto 0 auto;
   padding-top: 0px;
   justify-content: space-between;
 }
@@ -161,10 +163,7 @@ ul {
 
 .trend-posts-title {
   display: block;
-  margin-top: 0px;
-  margin-bottom: 41px;
-  margin-right: 0;
-  margin-left: 0px;
+  margin: 0px;
 
   font-family: OpenSans, sans-serif;
   font-weight: 600;
@@ -175,17 +174,23 @@ ul {
   color: #0f0d0e;
 }
 
+.trend-post-text {
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
 .trend-posts-title::after {
   content: "";
   display: block;
-  margin: 12px auto 10px auto;
+  margin: 8px auto 20px auto;
   height: 3px;
   width: 66px;
   background-color: rgba(181, 159, 91, 0.4);
 }
 
-.trends {
-  max-width: 100%;
+.tredns {
+  min-width: 100%;
+  margin: 0 auto;
 }
 
 .trend-cards {
@@ -269,8 +274,8 @@ ul {
   text-align: left;
   color: #b59f5b;
   text-transform: uppercase;
-  margin-left: 36px;
-  margin-top: 41px;
+  margin-left: 30px;
+  margin-top: 35px;
 }
 
 .trend-caregory-item:hover {
@@ -295,10 +300,8 @@ ul {
   line-height: 1.2;
   text-align: left;
   color: #ffffff;
-  margin-left: 36px;
-  margin-right: 36px;
-  margin-bottom: 32px;
-
+  margin: 0px 36px 0px 30px;
+  text-transform: uppercase;
   align-items: flex-end;
 }
 
@@ -412,6 +415,7 @@ ul {
 
 .post-card-preview {
   max-width: 381px;
+  width: 100%;
 }
 
 .post-card-img {
@@ -769,7 +773,7 @@ ul {
 
 .catalog-posts-title {
   display: block;
-  margin: 64px auto 41px auto;
+  margin: 64px auto 30px auto;
 
   font-family: OpenSans, sans-serif;
   font-weight: 600;
@@ -839,7 +843,8 @@ ul {
   text-transform: uppercase;
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 53px;
+  padding-top: 32px;
+  margin-bottom: 0;
 }
 
 .catalod-post-text {
@@ -931,7 +936,7 @@ ul {
 .icon {
   display: flex;
   flex-direction: row;
-  margin: 64px auto 0 auto;
+  margin: 0px auto 0 auto;
   width: 100%;
 
   background-color: #f4f7f6;
@@ -1222,12 +1227,30 @@ ul {
 }
 
 
-@media (min-width: 769px) and (max-width: 1000px) {
+@media (min-width: 840px) and (max-width: 1000px) {
+
+  .title-container {
+    margin-top: 10%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 
   /* Сейчас в тренде  */
 
+  .header {
+    width: 100%;
+  }
+
+  .article {
+    margin-right: 5%;
+  }
+
+  .additional {
+    margin-right: 2%;
+  }
+
   .t-card {
-    min-width: 49.5%;
+    min-width: 49.9%;
     box-sizing: border-box;
     padding-right: 18px;
     padding-left: 18px;
@@ -1236,18 +1259,18 @@ ul {
   }
 
   .trend-cards {
-    max-width: 100%;
     flex-wrap: wrap;
     margin-bottom: 49px;
+    justify-content: space-between
   }
 
   .t-card:nth-child(n + 2) {
     margin-left: 0;
   }
 
-  .t-card:nth-child(even) {
+  /* .t-card:nth-child(even) {
     margin-left: 0.25%;
-  }
+  } */
 
   .post-card-img {
     min-width: 381px;
@@ -1303,10 +1326,250 @@ ul {
     font-size: 17px;
   }
 
+  .icon {
+    margin-top: 40px;
+  }
 }
 
 
-@media (min-width: 501px) and (max-width: 768px) {
+@media (min-width: 545px) and (max-width: 839px) {
+
+  /* бургер */
+
+  .menu-list-item {
+    display: none;
+  }
+
+  .menu__button {
+    display: block;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .top-header {
+    justify-content: space-between;
+    padding: 0px 4.3% 0px 4.3%;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .title-container {
+    margin-top: 10%;
+    max-width: 630px;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .header {
+    height: 355px;
+    padding-top: 40px;
+  }
+
+  .logo {
+    min-width: 158px;
+  }
+
+  .page {
+    margin-top: 45px;
+  }
+
+  /* Сейчас в тренде  */
+
+  .tredns {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .t-card {
+    min-width: 49.9%;
+    box-sizing: border-box;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-top: 70px;
+    margin-bottom: 0.25%;
+  }
+
+  .t-card:nth-child(n + 3) {
+    padding-top: 95px;
+  }
+
+  .trend-cards {
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 49px;
+    justify-content: space-between;
+  }
+
+
+  .trend-posts-title {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .trend-post-text {
+    margin-bottom: 25px;
+  }
+
+  .trend-post {
+    font-size: 17px;
+    line-height: 1.3;
+    margin-left: 34px;
+    margin-right: 34px;
+  }
+
+  .trend-caregory-item {
+    font-size: 14px;
+  }
+
+  .t-card:nth-child(n + 2) {
+    margin-left: 0;
+  }
+
+  /* .t-card:nth-child(even) {
+    margin-left: 0.25%;
+  } */
+
+  .trend-category {
+    margin-left: 34px;
+    margin-top: 38px;
+  }
+
+  /* Основной контент */
+
+  .page-content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .article {
+    width: 100%;
+  }
+
+  .post-card {
+    margin-bottom: 0px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .post-text {
+    margin-bottom: 0px;
+  }
+
+  .post-card::after {
+    content: "";
+    display: block;
+    margin: 23px auto 40px auto;
+    height: 3px;
+    width: 100%;
+    background-color: #eeeeee;
+  }
+
+  .post-category {
+    margin-top: 14px;
+  }
+
+  .post-card-title {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .post {
+    font-size: 17px;
+    line-height: 1.3;
+    margin-bottom: 38px;
+    margin-top: 17px;
+  }
+
+  .post-info {
+    margin-bottom: 36px;
+  }
+
+  .post-card-img {
+    max-width: 450px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .additional {
+    max-width: 268px;
+  }
+
+  /* Каталог */
+
+  .catalog-cards {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px;
+  }
+
+  .catalog-card {
+    margin-bottom: 28px;
+    align-items: center;
+    max-width: 45%;
+  }
+
+  .catalog-card-img {
+    height: 226px;
+    object-fit: cover;
+    object-position: right center;
+  }
+
+  .mirror {
+    object-position: left center;
+  }
+
+  .catalog-card-content {
+    width: 100%;
+  }
+
+  .catalog-card:nth-child(odd) {
+    margin-left: 0px;
+  }
+
+  .catalog-card:nth-child(n+3) {
+    margin-bottom: 0px;
+  }
+
+  .catalog-posts-title {
+    margin: 0px auto 23px auto;
+    font-size: 18px;
+  }
+
+  .catalog-card:nth-child(even) {
+    margin-left: 8.8%;
+  }
+
+  .catalog-post {
+    font-size: 17px;
+  }
+
+  .icon {
+    margin-top: 60px;
+  }
+
+  .footer {
+    margin-top: 50px;
+  }
+
+}
+
+@media (min-width: 501px) and (max-width: 544px) {
+
+
+  .title-container {
+    margin: 20% 15px auto 15px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
 
   /* бургер */
 
@@ -1330,7 +1593,7 @@ ul {
   /* Сейчас в тренде  */
 
   .t-card {
-    min-width: 49.5%;
+    min-width: 49.9%;
     box-sizing: border-box;
     padding-right: 18px;
     padding-left: 18px;
@@ -1342,6 +1605,7 @@ ul {
     max-width: 100%;
     flex-wrap: wrap;
     margin-bottom: 49px;
+    justify-content: space-between;
   }
 
   .trend-posts-title {
@@ -1364,9 +1628,9 @@ ul {
     margin-left: 0;
   }
 
-  .t-card:nth-child(even) {
+  /* .t-card:nth-child(even) {
     margin-left: 0.25%;
-  }
+  } */
 
   .trend-category {
     margin-left: 34px;
@@ -1394,7 +1658,7 @@ ul {
   .post-card::after {
     content: "";
     display: block;
-    margin: 23px auto 44px auto;
+    margin: 23px auto 0px auto;
     height: 3px;
     width: 100%;
     background-color: #eeeeee;
@@ -1412,7 +1676,7 @@ ul {
   .post {
     font-size: 17px;
     line-height: 1.3;
-    margin-bottom: 38px;
+    margin-bottom: 17px;
     margin-top: 17px;
   }
 
@@ -1468,7 +1732,7 @@ ul {
   }
 
   .catalog-posts-title {
-    margin: 73px auto 41px auto;
+    margin: 35px auto 30px auto;
     font-size: 18px;
   }
 
@@ -1480,9 +1744,43 @@ ul {
     font-size: 17px;
   }
 
+  .icon {
+    margin-top: 40px;
+  }
+
+  .footer {
+    margin-top: 40px;
+  }
+
+  .footer-content {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .price {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 10px auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-footer {
+    margin: 0 auto 20px 0;
+  }
+
+
 }
 
 @media (min-width: 361px) and (max-width: 500px) {
+
+  .title-container {
+    margin: 25% 15px auto 15px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
 
   /* бургер */
 
@@ -1505,8 +1803,12 @@ ul {
 
   /* Сейчас в тренде  */
 
+  .page {
+    margin-top: 58px;
+  }
+
   .t-card {
-    min-width: 49%;
+    min-width: 49.9%;
     box-sizing: border-box;
     padding-right: 18px;
     padding-left: 18px;
@@ -1515,9 +1817,10 @@ ul {
   }
 
   .trend-cards {
-    max-width: 100%;
+    width: 100%;
     flex-wrap: wrap;
-    margin-bottom: 49px;
+    margin: 0 auto 49px auto;
+    justify-content: space-between
   }
 
   .trend-category {
@@ -1545,13 +1848,17 @@ ul {
     margin-left: 0;
   }
 
-  .t-card:nth-child(even) {
+  /* .t-card:nth-child(even) {
     margin-left: 0.25%;
-  }
+  } */
 
   .trend-category {
     margin-left: 34px;
     margin-top: 38px;
+  }
+
+  .trend-posts-title {
+    margin-bottom: 31px;
   }
 
   /* Основной контент */
@@ -1559,28 +1866,30 @@ ul {
   .page-content {
     padding-left: 3%;
     padding-right: 3%;
-    width: 100%;
+    max-width: 100%;
   }
 
   .content {
-    width: 100%;
-    /* margin: 0 5% 0 5%; */
+    max-width: 100%;
     justify-content: center;
     align-items: center;
-
     flex-direction: column;
   }
 
+  .article {
+    margin: 0;
+  }
+
   .post-card {
-    margin-bottom: 46px;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 0px;
   }
 
   .post-card::after {
     content: "";
     display: block;
-    margin: 23px auto 44px auto;
+    margin: 23px auto 30px auto;
     height: 3px;
     width: 100%;
     background-color: #eeeeee;
@@ -1598,16 +1907,21 @@ ul {
   .post {
     font-size: 17px;
     line-height: 1.3;
-    margin-bottom: 38px;
+    margin-bottom: 20px;
     margin-top: 17px;
   }
 
   .post-info {
-    margin-bottom: 36px;
+    margin-bottom: 20px;
   }
 
   .post-card-img {
     max-width: 391px;
+  }
+
+  .post-card-preview {
+    width: 100%;
+    margin: 0 auto;
   }
 
   .additional {
@@ -1615,13 +1929,35 @@ ul {
     margin-right: 9.8%;
   }
 
+  /* Новые посты */
+
+  .new-posts-title {
+    font-size: 16px;
+  }
+
+  .post-img {
+    width: 69px;
+  }
+
+  .teg-title {
+    margin-top: 55px;
+    margin-bottom: 18px;
+  }
+
+  .topic-title {
+    margin-top: 43px;
+  }
+
   /* Каталог */
 
   .catalog-cards {
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     justify-content: space-between;
-    margin: 0px;
+    margin: 0 auto;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
   .catalog-card {
@@ -1641,7 +1977,7 @@ ul {
   }
 
   .catalog-card-content {
-    width: 100%;
+    max-width: 100%;
   }
 
   .catalog-card:nth-child(odd) {
@@ -1653,12 +1989,8 @@ ul {
   }
 
   .catalog-posts-title {
-    margin: 73px auto 41px auto;
+    margin: 43px auto 25px auto;
     font-size: 18px;
-  }
-
-  .catalog-card:nth-child(even) {
-    margin-left: 8.8%;
   }
 
   .catalog-post {
@@ -1689,13 +2021,20 @@ ul {
     margin: 0 auto 20px 0;
   }
 
+  .icon {
+    margin-top: 40px;
+  }
+
+  .footer {
+    margin-top: 40px;
+  }
+
   /* Popup */
 
   .popup-form {
     margin-left: 5%;
     margin-right: 5%;
   }
-
 }
 
 
@@ -1704,6 +2043,7 @@ ul {
   .header {
     padding-top: 31px;
     padding-bottom: 220px;
+    height: 390px;
   }
 
   .top-header {
@@ -1718,7 +2058,7 @@ ul {
     display: block;
     order: 2;
     position: absolute;
-    top: 21px;
+    top: 0px;
     right: 14px;
   }
 
@@ -1729,12 +2069,13 @@ ul {
   .logo {
     min-width: 269px;
     order: 1;
-    margin-top: 174px;
+    margin-top: 190px;
     margin-bottom: 42px;
   }
 
   .title-container {
-    margin-top: 0px;
+    margin: 0px 15px 0px 15px;
+
   }
 
   .title {
@@ -1745,12 +2086,12 @@ ul {
   /* Сейчас в тренде  */
 
   .page {
-    margin-top: 44px;
+    margin-top: 38px;
   }
 
   .trend-posts-title {
     font-size: 16px;
-    margin-bottom: 36px;
+    margin-bottom: 20px;
   }
 
   .t-card {
@@ -1774,7 +2115,7 @@ ul {
   .trend-cards {
     max-width: 100%;
     flex-wrap: wrap;
-    margin-bottom: 44px;
+    margin-bottom: 5px;
   }
 
   .trend-post {
@@ -1782,7 +2123,7 @@ ul {
     line-height: 1.25;
     margin-left: 24px;
     margin-right: 24px;
-    margin-top: 12px;
+    margin-top: 3px;
   }
 
   .trend-caregory-item {
@@ -1792,6 +2133,10 @@ ul {
   .trend-category {
     margin-left: 24px;
     margin-top: 35px;
+  }
+
+  .trend-post-text {
+    margin-bottom: 15px;
   }
 
 
@@ -1820,25 +2165,25 @@ ul {
   .post-card::after {
     content: "";
     display: block;
-    margin: 18px auto 33px auto;
+    margin: 18px auto 22px auto;
     height: 3px;
     width: 100%;
     background-color: #eeeeee;
   }
 
   .post-category {
-    margin-top: 14px;
+    margin-top: 5px;
   }
 
   .post {
     font-size: 16px;
     line-height: 1.25;
-    margin-bottom: 25px;
-    margin-top: 16px;
+    margin-bottom: 15px;
+    margin-top: 10px;
   }
 
   .post-info {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 
   .post-card {
@@ -1863,6 +2208,7 @@ ul {
 
   .new-posts-title {
     font-size: 16px;
+    margin-top: 20px;
   }
 
   .post-img {
@@ -1878,6 +2224,11 @@ ul {
     margin-top: 43px;
   }
 
+  .teg-list-item {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
   /* Каталог */
 
   .catalog-cards {
@@ -1887,7 +2238,7 @@ ul {
   }
 
   .catalog-posts-title {
-    margin: 64px auto 41px auto;
+    margin: 40px auto 28px auto;
     font-size: 16px;
   }
 
@@ -1904,6 +2255,10 @@ ul {
 
   .catalog-card:last-child {
     margin-bottom: 0px;
+  }
+
+  .catalog-card {
+    margin-bottom: 20px;
   }
 
   .catalog-card-img {
